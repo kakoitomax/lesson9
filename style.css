@@ -1,0 +1,42 @@
+/*Общее значение (во всех заданиях одинаковое)*/
+li.li1, li.li2, li.li3, li.li4, li.li5 {
+    width: 200px;
+    border: 1px solid blue;
+    padding: 5px;
+    margin-bottom: 5px;
+    list-style-position: inside;
+}
+li.li1:hover, li.li2:hover, li.li3:hover, li.li4:hover, li.li5:hover {
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+/*Практика по селекторам задание 39*/
+
+li.li1:hover + li.li1 {
+    background: red;
+    color: white;
+}
+/*Практика по селекторам задание 40*/
+
+li.li2:hover + li.li2 + li.li2 {
+    background: red;
+    color: white;
+}
+
+/*Практика по селекторам задание 41*/
+li.li3:hover ~ li.li3 {
+    background: red;
+    color: white;
+}
+/*Практика по селекторам задание 42*/
+li.li4:hover ~ li.li4:not(:last-child) {
+    background: red;
+    color: white;
+}
+/*Практика по селекторам задание 43*/
+li.li5:hover ~ li.li5:nth-child(odd) {
+    background: red;
+    color: white;
+}
